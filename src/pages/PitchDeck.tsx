@@ -515,7 +515,7 @@ export default function PitchDeck() {
               <a href="/" className="btn-primary">
                 Try the Demo
               </a>
-              <a href="https://github.com" target="_blank" className="btn-secondary">
+              <a href="https://github.com/abdou-etu/machinehub/" target="_blank" className="btn-secondary">
                 View GitHub
               </a>
             </div>

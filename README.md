@@ -29,4 +29,5 @@ High upfront capital costs (CapEx) prevent businesses from accessing necessary h
 
 ## 2. Project-Prototype Demo Link
 
-**Demo URL:** [Insert Demo Link Here]
+**Demo URL:** https://machinehub.vercel.app/
+**Pitchdesk URL:** https://machinehub.vercel.app/pitch
