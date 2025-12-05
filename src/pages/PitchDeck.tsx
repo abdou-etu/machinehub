@@ -453,10 +453,10 @@ export default function PitchDeck() {
           </div>
           <div className="grid md:grid-cols-4 gap-4">
             {[
-              { phase: 'Q1 2025', title: 'Foundation', items: ['Core Daml contracts', 'Canton integration', 'MVP frontend'], status: 'current' },
-              { phase: 'Q2 2025', title: 'Pilot', items: ['Partner onboarding', 'First machine tokenization', 'Beta testing'], status: 'upcoming' },
-              { phase: 'Q3 2025', title: 'Scale', items: ['Multi-asset support', 'Secondary market', 'Mobile app'], status: 'upcoming' },
-              { phase: 'Q4 2025', title: 'Expand', items: ['Cross-border leasing', 'Institutional partners', 'DAO governance'], status: 'upcoming' },
+              { phase: 'Q1 2026', title: 'Foundation', items: ['Core Daml contracts', 'Canton integration', 'MVP frontend'], status: 'current' },
+              { phase: 'Q2 2026', title: 'Pilot', items: ['Partner onboarding', 'First machine tokenization', 'Beta testing'], status: 'upcoming' },
+              { phase: 'Q3 2026', title: 'Scale', items: ['Multi-asset support', 'Secondary market', 'Mobile app'], status: 'upcoming' },
+              { phase: 'Q4 2026', title: 'Expand', items: ['Cross-border leasing', 'Institutional partners', 'DAO governance'], status: 'upcoming' },
             ].map((phase) => (
               <div key={phase.phase} className={`glass-card p-5 ${phase.status === 'current' ? 'border-primary border-2' : ''}`}>
                 <div className="flex items-center justify-between mb-3">

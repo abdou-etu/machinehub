@@ -1,50 +1,32 @@
-# React + TypeScript + Vite
+﻿# Machine-as-a-Service (MaaS) Protocol
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 1. Project Details
 
-Currently, two official plugins are available:
+### Selected Ideathon track
+Tokenized Real-World Assets
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Project Title & Description
+**Machine-as-a-Service (MaaS) Protocol**
 
-## Expanding the ESLint configuration
+"Capital expenditure (CapEx) is dead." We are building a fractional leasing protocol that allows enterprises to move to OpEx (Operational Expenditure). Instead of a hospital buying an MRI machine or a construction firm buying a crane, they "subscribe" to it via a tokenized lease. Investors fund the machine and earn the lease payments. Smart contracts automatically route usage fees from the lessee to the token holders, unlocking liquidity for hard assets.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Key problem being addressed
+High upfront capital costs (CapEx) prevent businesses from accessing necessary heavy machinery. Additionally, hard assets lack liquidity for investors.
 
-- Configure the top-level `parserOptions` property like this:
+### Proposed solution and concept highlights
+- **Tokenized Leasing:** Investors fund machinery in exchange for tokenized shares.
+- **Smart Contract Automation:** Usage fees are automatically routed to investors.
+- **Lifecycle Management:** Full tracking of asset status from purchase to retirement.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Tools, technologies, or methods
+- **Frontend:** React, TypeScript, Vite, Tailwind CSS
+- **Ledger Technology:** Daml & Canton
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+**Why Canton/Daml?**
+- **Privacy:** The construction company (Lessee) does not want the public to see their specific usage data or lease rates. Canton keeps this private.
+- **Lifecycle Management:** Daml is perfect for modeling the state of the machine: Ordered -> Delivered -> Active -> Maintenance -> Retired.
+- **Atomic Lifecycle:** Daml is perfect for modeling the state of the machine: Purchased -> Leased -> Maintenance -> Retired.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## 2. Project-Prototype Demo Link
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+**Demo URL:** [Insert Demo Link Here]
